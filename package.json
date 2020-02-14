@@ -1,0 +1,16 @@
+{
+  "name": "decentralized-websites",
+  "version": "0.0.1",
+  "description": "Decentralized Website Templates",
+  "private": true,
+  "scripts": {
+    "dev": "scripts/dev.sh"
+  },
+  "devDependencies": {
+    "bulma": "^0.8.0",
+    "node-sass": "^4.13.1",
+    "parcel-bundler": "^1.12.4",
+    "posthtml-inline-svg": "^0.1.0",
+    "pug": "^2.0.4"
+  }
+}
