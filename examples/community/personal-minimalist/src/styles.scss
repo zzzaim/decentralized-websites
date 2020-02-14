@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+$text: black;
+$text-strong: black;
+$body-size: 20px;
+$family-sans-serif: Archivo, sans-serif;
+
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/elements/container.sass";
+@import "~bulma/sass/elements/title.sass";
+@import "~bulma/sass/layout/hero.sass";
+
+.grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-items: center;
+  align-items: center;
+
+  @include mobile {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+}
+
+.grid-tt {
+  justify-self: left;
+
+  @include mobile {
+    text-align: center;
+    justify-self: center;
+  }
+}
+
+.grid-px {
+  @include mobile {
+    padding: 2em;
+  }
+}
