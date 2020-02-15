@@ -1,39 +1,125 @@
 @charset "utf-8";
 
 $text: black;
+$code: $text;
 $text-strong: black;
-$body-size: 20px;
+$body-size: 18px;
 $family-sans-serif: Archivo, sans-serif;
 
 @import "~bulma/sass/utilities/_all.sass";
 @import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/grid/_all.sass";
+@import "~bulma/sass/elements/box.sass";
 @import "~bulma/sass/elements/container.sass";
+@import "~bulma/sass/elements/content.sass";
+@import "~bulma/sass/elements/image.sass";
 @import "~bulma/sass/elements/title.sass";
-@import "~bulma/sass/layout/hero.sass";
+@import "~bulma/sass/layout/_all.sass";
 
-.grid {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  justify-items: center;
+.social-link {
+  display: flex;
   align-items: center;
+  border: 2px solid $black;
+  padding: 1em 1.25em;
 
-  @include mobile {
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+  .image {
+    margin-right: .75em;
+  }
+
+  .link > a {
+    color: $black;
+
+    &:hover {
+      color: $blue;
+    }
   }
 }
 
-.grid-tt {
-  justify-self: left;
+address.crypto-wallet {
+  display: flex;
+  font-style: normal;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $black;
+  padding: 0.5em 1em;
 
-  @include mobile {
-    text-align: center;
-    justify-self: center;
+  .image {
+    margin-right: 0.5em;
   }
 }
 
-.grid-px {
-  @include mobile {
-    padding: 2em;
+.crypto-addresses .column.crypto-currency {
+  text-align: center;
+
+  code {
+    background-color: inherit;
+    font-weight: bold;
+  }
+
+  &:after {
+    background-color: $black;
+    content: "";
+    display: block;
+    height: 2em;
+    width: 2px;
+    margin: 0 auto;
+  }
+}
+
+.shift {
+  @include desktop {
+    &.about {
+      margin-right: 2em;
+
+      .line-box  > span:after {
+        background-color: palegreen;
+      }
+    }
+
+    &.socials {
+      margin-top: 10em;
+      margin-left: 4em;
+      margin-right: 2em;
+
+      .line-box {
+        margin-bottom: 1em;
+
+        & > span:after {
+          background-color: peachpuff;
+          margin-left: 0.25em;
+          margin-right: -0.25em;
+        }
+      }
+    }
+
+    &.tips {
+      margin-top: 5em;
+      margin-left: 4em;
+      margin-right: 2em;
+
+      .line-box  > span:after {
+        background-color: pink;
+        margin-left: 0;
+      }
+    }
+
+    &.photo {
+      margin: 2em;
+      transform: scaleX(-1);
+    }
+  }
+}
+
+.line-box > span {
+  display: inline-block;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 0.5em;
+    background-color: paleturquoise;
+    margin-top: -0.5em;
+    margin-left: -0.25em;
+    margin-right: -0.25em;
   }
 }

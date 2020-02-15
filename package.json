@@ -7,10 +7,13 @@
     "dev": "scripts/dev.sh"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "bulma": "^0.8.0",
+    "cryptocurrency-icons": "^0.16.1",
     "node-sass": "^4.13.1",
     "parcel-bundler": "^1.12.4",
     "posthtml-inline-svg": "^0.1.0",
+    "posthtml-lorem": "^1.0.0",
     "pug": "^2.0.4"
   }
 }

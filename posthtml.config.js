@@ -3,6 +3,7 @@ module.exports = {
     'posthtml-inline-svg': {
       cwd: process.env.TEMPLATE + '/src',
       tag: 'image'
-    }
+    },
+    'posthtml-lorem': {}
   }
 }

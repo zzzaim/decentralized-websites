@@ -1,22 +1,97 @@
 doctype html
+
+mixin about
+  .box.is-shadowless
+    .content.is-medium
+      h3.line-box
+        span About Me
+      lorem(size="3")
+
+mixin socials
+  .box.is-shadowless
+    .content.is-medium
+      h3.line-box
+        span Social Media
+      p.social-link.twitter
+        span.image.is-32x32
+          image.has-ratio(src="images/twitter.svg")
+        span.link
+          a(href="https://twitter.com/satoshi") @satoshi
+      p.social-link.facebook
+        span.image.is-32x32
+          image.has-ratio(src="images/facebook.svg")
+        span.link
+          a(href="https://facebook.com/satoshi") Satoshi Nakamoto
+      p.social-link.github
+        span.image.is-32x32
+          image.has-ratio(src="images/github.svg")
+        span.link
+          a(href="https://github.com/satoshi") Satoshi Nakamoto
+      p.social-link.medium
+        span.image.is-32x32
+          image.has-ratio(src="images/medium.svg")
+        span.link
+          a(href="https://medium.com/satoshi") @Nakamoto
+
+mixin tips
+  .box
+    .content.is-medium
+      h3.line-box
+        span Tips
+      p.
+        Any tips and donations is greatly appreciated!
+        You may send any of the following coins to:
+    .columns.is-multiline.is-centered.is-gapless.is-mobile.crypto-addresses
+      .column.crypto-currency
+        code BTC
+      .column.crypto-currency
+        code ETH
+      .column.crypto-currency
+        code XRP
+      .column.crypto-currency
+        code LTC
+      .column.is-12
+        h3.is-size-3.is-size-4-touch
+          address.crypto-wallet
+            span.image.is-48x48.is-hidden-touch
+              image(src="images/wallet.svg")
+            strong nakamoto.crypto
+
 html
   head
-    meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     title Personal Minimalist
-    link(rel='stylesheet' href='styles.scss')
+    link(rel="stylesheet" href="styles.scss")
     link(
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Archivo:400,700&display=swap"
     )
   body
-    section.hero.is-large
+    section.hero.is-medium
       .hero-body
         .container
-          .grid
-            div.grid-tt
-              h1.title.is-1 Satoshi Nakamoto
-              h2.subtitle.is-3 Blockchain Developer
-            div.grid-px
-              div.image.is-square
-                image.has-ratio(src="image.svg" width="240px")
+          .columns.is-vcentered
+            .column.is-7
+              .box.is-shadowless
+                h1.title.is-1 Satoshi Nakamoto
+                h2.subtitle.is-3 Blockchain Developer
+            .column.is-5.has-text-centered
+              .shift.photo
+                figure.image.is-squre
+                  img.is-rounded(src="images/photo.jpg")
+
+    section.section.is-medium
+      .container
+        .columns
+          .column.is-half
+            .shift.about
+              +about
+            .shift.tips
+              +tips
+              p.has-text-centered.
+                Get your own #[strong .crypto] domain now
+                at #[a(href="https://unstoppabledomains.com") unstoppabledomains.com]
+          .column.is-half
+            .shift.socials
+              +socials
