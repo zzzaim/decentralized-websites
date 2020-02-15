@@ -54,10 +54,10 @@ mixin tips
         code LTC
       .column.is-12
         h3.is-size-3.is-size-4-touch
+          // Update this to your own domain
           address.crypto-wallet
             span.image.is-48x48.is-hidden-touch
               image(src="images/wallet.svg")
-            // Update this to your own domain
             strong nakamoto.crypto
 
 html
@@ -66,20 +66,16 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title Personal Minimalist
     link(rel="stylesheet" href="styles.scss")
-    link(
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Archivo:400,700&display=swap"
-    )
   body
-    section.hero.is-medium
+    section.hero.has-background-light
       .hero-body
         .container
           .columns.is-vcentered
             .column.is-7
-              .box.is-shadowless
-                // Change to your own name and title
-                h1.title.is-1 Satoshi Nakamoto
-                h2.subtitle.is-3 Blockchain Developer
+              // Change to your own name and title
+              h1.title.is-1 Satoshi Nakamoto
+              h2.subtitle.is-3.line-box
+                span Blockchain Developer
             .column.is-5.has-text-centered
               .shift.photo
                 figure.image.is-squre

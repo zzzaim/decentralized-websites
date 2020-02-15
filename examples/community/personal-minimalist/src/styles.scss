@@ -4,7 +4,7 @@ $text: black;
 $code: $text;
 $text-strong: black;
 $body-size: 18px;
-$family-sans-serif: Archivo, sans-serif;
+$family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 @import "~bulma/sass/utilities/_all.sass";
 @import "~bulma/sass/base/_all.sass";
@@ -23,7 +23,7 @@ $family-sans-serif: Archivo, sans-serif;
   padding: 1em 1.25em;
 
   .image {
-    margin-right: .75em;
+    margin-right: 0.75em;
   }
 
   .link > a {
@@ -71,7 +71,7 @@ address.crypto-wallet {
     &.about {
       margin-right: 2em;
 
-      .line-box  > span:after {
+      .line-box > span:after {
         background-color: palegreen;
       }
     }
@@ -97,14 +97,14 @@ address.crypto-wallet {
       margin-left: 4em;
       margin-right: 2em;
 
-      .line-box  > span:after {
+      .line-box > span:after {
         background-color: pink;
         margin-left: 0;
       }
     }
 
     &.photo {
-      margin: 2em;
+      margin: 5em;
       transform: scaleX(-1);
     }
   }
