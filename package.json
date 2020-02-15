@@ -4,7 +4,8 @@
   "description": "Decentralized Website Templates",
   "private": true,
   "scripts": {
-    "dev": "scripts/dev.sh"
+    "dev": "scripts/dev.sh",
+    "build": "scripts/build.sh"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
@@ -14,6 +15,7 @@
     "parcel-bundler": "^1.12.4",
     "posthtml-inline-svg": "^0.1.0",
     "posthtml-lorem": "^1.0.0",
+    "prettier": "^1.19.1",
     "pug": "^2.0.4"
   }
 }

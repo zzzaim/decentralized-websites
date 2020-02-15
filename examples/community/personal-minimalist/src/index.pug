@@ -3,6 +3,7 @@ doctype html
 mixin about
   .box.is-shadowless
     .content.is-medium
+      // Update to your own bio/profile
       h3.line-box
         span About Me
       lorem(size="3")
@@ -12,6 +13,7 @@ mixin socials
     .content.is-medium
       h3.line-box
         span Social Media
+      // Update to your own names and links
       p.social-link.twitter
         span.image.is-32x32
           image.has-ratio(src="images/twitter.svg")
@@ -55,6 +57,7 @@ mixin tips
           address.crypto-wallet
             span.image.is-48x48.is-hidden-touch
               image(src="images/wallet.svg")
+            // Update this to your own domain
             strong nakamoto.crypto
 
 html
@@ -74,6 +77,7 @@ html
           .columns.is-vcentered
             .column.is-7
               .box.is-shadowless
+                // Change to your own name and title
                 h1.title.is-1 Satoshi Nakamoto
                 h2.subtitle.is-3 Blockchain Developer
             .column.is-5.has-text-centered
@@ -89,6 +93,7 @@ html
               +about
             .shift.tips
               +tips
+              // Optionally add your referal ID on the URL
               p.has-text-centered.
                 Get your own #[strong .crypto] domain now
                 at #[a(href="https://unstoppabledomains.com") unstoppabledomains.com]

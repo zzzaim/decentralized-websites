@@ -1,7 +1,7 @@
 module.exports = {
   plugins: {
     'posthtml-inline-svg': {
-      cwd: process.env.TEMPLATE + '/src',
+      cwd: process.cwd() + '/src',
       tag: 'image'
     },
     'posthtml-lorem': {}
